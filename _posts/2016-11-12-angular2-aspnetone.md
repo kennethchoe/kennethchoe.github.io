@@ -5,17 +5,20 @@ published: true
 ---
 
 Dev Machine Setup
-------------------
+-----------------
+
 Follow this instruction to create basic application: [http://blog.stevensanderson.com/2016/10/04/angular2-template-for-visual-studio/](http://blog.stevensanderson.com/2016/10/04/angular2-template-for-visual-studio/)
 
 Deployment Server Setup
 ------------------
+
 1. Install .NET Core 1.0.1 Runtime: go to [https://www.microsoft.com/net/download](https://www.microsoft.com/net/download) and download [Windows (Server Hosting) - .NET Core Installer](https://go.microsoft.com/fwlink/?LinkID=827547).
 2. Install Node.JS and restart the server. [https://github.com/aspnet/Hosting/issues/861](https://github.com/aspnet/Hosting/issues/861)
 3. Set up the website and app pool. The app pool is better be set to "No Managed Code".
 
 Packaging and Deployment
 --------------------
+
 VS 2015 ASP.NET Core project uses `.xproj`, not `.csproj`. This works fine with `MSBuild /t:clean` and `/t:build`.
 
 Compiling the solution with .xproj:
